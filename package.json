@@ -18,7 +18,13 @@
         "url": "https://github.com/lonniechen/nestjs-app/issues"
     },
     "homepage": "https://github.com/lonniechen/nestjs-app#readme",
-    "dependencies": {},
+    "dependencies": {
+        "@nestjs/common": "^7.5.2",
+        "@nestjs/core": "^7.5.2",
+        "@nestjs/platform-fastify": "^7.5.2",
+        "reflect-metadata": "^0.1.13",
+        "rxjs": "^6.6.3"
+    },
     "devDependencies": {
         "@types/node": "^14.14.7",
         "ts-node": "^9.0.0",
