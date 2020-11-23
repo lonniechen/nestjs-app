@@ -23,8 +23,11 @@
         "@nestjs/config": "^0.6.1",
         "@nestjs/core": "^7.5.2",
         "@nestjs/platform-fastify": "^7.5.2",
+        "@nestjs/typeorm": "^7.1.5",
+        "mongodb": "^3.6.3",
         "reflect-metadata": "^0.1.13",
-        "rxjs": "^6.6.3"
+        "rxjs": "^6.6.3",
+        "typeorm": "^0.2.29"
     },
     "devDependencies": {
         "@types/node": "^14.14.7",
