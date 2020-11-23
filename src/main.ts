@@ -8,12 +8,13 @@ import {
 import { AppModule } from './app.module';
 
 async function bootstrap() {
+    const env = process.env.NODE_ENV ? process.env.NODE_ENV.trim() : 'dev'
     const app = await NestFactory.create<NestFastifyApplication>(
-        AppModule,
+        AppModule.forRoot(env),
         new FastifyAdapter()
     );
 
-    const port = 8080;
+    const port = parseInt(process.env.PORT) || 8080;
     await app.listen(port, '0.0.0.0');
 }
 
